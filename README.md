@@ -19,16 +19,17 @@ git pull ~/.middleman/seed
 ```
 ## Additional info
 
-**Included libraries:**
+**Included packages:**
 
 * [Middleman](http://middlemanapp.com/)
 * [HTML5 boilerplate](http://html5boilerplate.com/)
 * [Slim](http://slim-lang.com/)
 * [SASS](http://sass-lang.com/)
-* [Bootstrap SASS](https://github.com/twbs/bootstrap-sass)
+* [Bootstrap 3 SASS](https://github.com/twbs/bootstrap-sass)
 * [Font Awesome](http://fontawesome.io) <span class="badge"><i class="fa fa-thumbs-up"></i></span>
 * [Tilt](https://github.com/rtomayko/tilt)
 * [jQuery](http://jquery.com/)
+* [Modernizr](http://modernizr.com/)
 
 **Included features:**
 
