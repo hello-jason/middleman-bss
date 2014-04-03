@@ -1,6 +1,6 @@
 # Middleman Seed
 
-This is a project template to be used for new [Middleman](http://middlemanapp.com) projects.
+This is a project template to be used for new [Middleman](http://middlemanapp.com) projects. Install the project template, then use it to initialize a new Middleman project.
 
 ## To install this seed
 
@@ -17,6 +17,7 @@ middleman
 git fetch ~/.middleman/seed
 git pull ~/.middleman/seed
 ```
+## Additional info
 
 **Included libraries:**
 
