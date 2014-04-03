@@ -1,0 +1,30 @@
+doctype html
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7"
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8"
+/[if IE 8] <html class="no-js lt-ie9"
+html.no-js
+  head
+    meta charset="UTF-8"
+    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+    meta content="width=device-width" name="viewport"
+    meta content="index,follow" name="robots"
+    title #{site_title} | #{current_page.data.title} || #{site_title}
+    meta content="#{current_page.data.meta_description}" name="description"
+    link href="#{site_url+current_page.url}" rel="canonical"
+
+    == stylesheet_link_tag "normalize", "main"
+    == javascript_include_tag "vendor/modernizr-2.6.1.min.js"
+  body class="#{page_classes}"
+    /[if lte IE 8]
+      p.chromeframe.alert.alert-warning
+        | You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site better.
+    #wrap
+      header role="banner"
+        == _partial "navigation"
+      main role="document"
+        .container
+          == yield
+      footer.content-info role="content-info"
+        .container
+          p &copy; #{Time.now.year} #{site_title}
+    == javascript_include_tag "vendor/jquery-2.1.0.min.js", "bootstrap.js", "main.js"
