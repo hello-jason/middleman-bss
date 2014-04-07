@@ -10,9 +10,9 @@ html.no-js
     meta content="index,follow" name="robots"
 
     - if current_page.data.title
-      title= site_title+" | "+current_page.data.title
+      title "#{site_title} | #{current_page.data.title}"
     - else
-      title= site_title
+      title "#{site_title}"
 
     - if current_page.data.meta_description
       meta content="#{current_page.data.meta_description}" name="description"

@@ -1,6 +1,7 @@
 # ========================================================================
 # Copyright 2011-2014 Immense Networks, LLC
 # http://immense.net
+# MIT License
 # ========================================================================
 
 # ========================================================================
@@ -16,11 +17,14 @@ set :images_dir, 'img'
 
 set :sass, line_comments: false, style: :nested
 
+# Internationalization
 activate :i18n
 # Enable cache buster
 activate :asset_hash, :exts => ['.css', '.png', '.jpg', '.gif']
 # Use relative URLs
 activate :relative_assets
+# Pretty URLs
+activate :directory_indexes
 
 
 # ========================================================================
@@ -75,7 +79,6 @@ end
 # Development-specific configuration
 # ========================================================================
 configure :development do
-  activate :directory_indexes
   set :site_url, "#{site_url_development}"
 end
 
@@ -110,8 +113,6 @@ configure :build do
       { icon: "favicon.png", size: "16x16" },
       { icon: "favicon.ico", size: "64x64,32x32,24x24,16x16" },
       { icon: "mstile-144x144", format: "png" },
-
     ]
   }
-
 end
