@@ -1,6 +1,6 @@
 # Middleman Immense Seed
 
-This is a project template to be used for new [Middleman](http://middlemanapp.com) projects. It comes with Bootstrap, Slim, Sass, and is setup for Install the project template, then use it to initialize a new Middleman project.
+This is a project template to be used for new [Middleman](http://middlemanapp.com) projects. It comes with Bootstrap, Slim, and Sass. Install the project template, then use it to initialize a new Middleman project.
 
 ## To install
 
