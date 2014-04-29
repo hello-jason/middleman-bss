@@ -5,7 +5,7 @@ This is a project template to be used for new [Middleman](http://middlemanapp.co
 ## To install and start Middleman server
 
 ```bash
-git clone git@bitbucket.org:squits04/middleman-seed-template.git ~/.middleman/seed-middleman-jason
+git clone git@github.com:squits04/seed-middleman-jason.git ~/.middleman/seed-middleman-jason
 middleman init project-name --template=seed-middleman-jason
 cd project-name
 bundle install
