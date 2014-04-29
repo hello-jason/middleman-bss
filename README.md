@@ -1,28 +1,28 @@
-# Middleman Immense Seed
+# Jason's Middleman Seed
 
 This is a project template to be used for new [Middleman](http://middlemanapp.com) projects. It comes with Bootstrap, Slim, and Sass. Install the project template, then use it to initialize a new Middleman project.
 
-## To install
+## To install and start Middleman server
 
 ```bash
-git clone git@gitlab.immense.net:seeds/middleman-immense-seed.git ~/.middleman/immense-seed
-middleman init project-name --template=immense-seed
+git clone git@bitbucket.org:squits04/middleman-seed-template.git ~/.middleman/seed-middleman-jason
+middleman init project-name --template=seed-middleman-jason
 cd project-name
 bundle install
 middleman
 ```
 
-
 ## Configuration
 
 * Set site_title, site_description, etc. in `config.rb`
 * Replace `source/favicon_template.png` with appropriate graphic
+* Build away!
 
 ## Updating
 
 ```bash
-git fetch ~/.middleman/seed
-git pull ~/.middleman/seed
+git fetch ~/.middleman/seed-middleman-jason
+git pull ~/.middleman/seed-middleman-jason
 ```
 
 ## Additional info
@@ -44,7 +44,10 @@ git pull ~/.middleman/seed
 
 * Image optimization
 * CSS3 mixins
-* HTML5 reset
+* CSS reset
+* HTML5 layout
+* Image compression
+* Asset minification
 
 ## License
 
