@@ -5,11 +5,11 @@ This is a project template to be used for new [Middleman](http://middlemanapp.co
 ## To install and start Middleman server
 
 ```bash
-git clone git@github.com:squits04/seed-middleman-jason.git ~/.middleman/seed-middleman-jason
+git clone git@github.com:hello-jason/seed-middleman-jason.git ~/.middleman/seed-middleman-jason
 middleman init project-name --template=seed-middleman-jason
 cd project-name
 bundle install
-middleman
+bundle exec middleman
 ```
 
 ## Configuration
@@ -39,6 +39,7 @@ git pull ~/.middleman/seed-middleman-jason
 * [jQuery](http://jquery.com/)
 * [Modernizr](http://modernizr.com/)
 * [Favicon Maker](https://github.com/follmann/middleman-favicon-maker)
+* [Middleman Bourbon](http://bourbon.io/)
 
 **Included features:**
 
