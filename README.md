@@ -1,4 +1,4 @@
-# Jason's Middleman Seed
+# Jason's Middleman Template
 
 This is a project template to be used for new [Middleman](http://middlemanapp.com) projects. It comes with Bootstrap, Slim, and Sass. Install the project template, then use it to initialize a new Middleman project.
 
@@ -14,11 +14,21 @@ bundle exec middleman
 
 ## Configuration
 
+* Copy `environment_variables_sample.rb` to `environment_variables.rb`
+* Set `site_url_production` and `site_url_development` in `environment_variables.rb`
 * Set site_title, site_description, etc. in `config.rb`
 * Replace `source/favicon_template.png` with appropriate graphic
 * Build away!
 
-## Updating
+## Deploying
+
+Build the project, then copy the contents of `build` to your web server.
+
+```bash
+bundle exec middleman build
+```
+
+## Updating this template
 
 ```bash
 git fetch ~/.middleman/seed-middleman-jason
