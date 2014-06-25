@@ -1,6 +1,6 @@
 # Jason's Middleman Template
 
-This is a project template to be used for new [Middleman](http://middlemanapp.com) projects. It comes with Bootstrap, Slim, and Sass. Install the project template, then use it to initialize a new Middleman project.
+Website written with [Ruby](https://www.ruby-lang.org/en/)+[Middleman](http://middlemanapp.com)
 
 ## To install this Middleman template
 
@@ -9,13 +9,11 @@ git clone git@github.com:hello-jason/seed-middleman-jason.git ~/.middleman/seed-
 middleman init project-name --template=seed-middleman-jason
 ```
 
-## To build a project based on this template
+## To install and start Middleman server
 
 **Requirements**
 
-* [Bundler](http://bundler.io/)
-* [rbenv](https://github.com/sstephenson/rbenv)
-* [ruby-build](https://github.com/sstephenson/ruby-build)
+* Install [rbenv](https://github.com/sstephenson/rbenv) and [ruby-build](https://github.com/sstephenson/ruby-build)
 
 * Clone project
 
@@ -27,28 +25,23 @@ cd UPDATEME
 * Install Ruby version
 
 ```
-rbenv install
+rbenv install && rbenv rehash
 ```
 
 * Install dependencies
 
 ```
-bundle install
+gem install bundler && bundle install
 ```
 
+* Copy `source/environment_variables.sample.rb` to `source/environment_variables.rb`
+* Set `site_url_production` and `site_url_development` in `source/environment_variables.rb`
+* Replace `source/favicon_template.png` with appropriate graphic
 * Start Middleman server
 
 ```
 bundle exec middleman
 ```
-
-## Configuration
-
-* Copy `source/environment_variables_sample.rb` to `source/environment_variables.rb`
-* Set `site_url_production` and `site_url_development` in `environment_variables.rb`
-* Set site_title, site_description, etc. in `config.rb`
-* Replace `source/favicon_template.png` with appropriate graphic
-* Build away!
 
 ## Deploying
 
