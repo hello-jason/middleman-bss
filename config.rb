@@ -1,30 +1,35 @@
 # ========================================================================
 # Copyright 2011-2014 Immense Networks, LLC
 # http://immense.net
-# MIT License
 # ========================================================================
+
+require "./source/environment_variables.rb"
 
 # ========================================================================
 # Site settings
 # ========================================================================
-set :site_title,            "Middleman Seed"
-set :site_description,      "Default meta description."
-set :site_url_development,  "http://change.this"
-set :site_url_production,   "http://change.this"
-set :css_dir, 'css'
-set :js_dir, 'js'
-set :images_dir, 'img'
+set :site_title,            "pfsync"
+set :site_description,      "pfsync uses ActiveSync to support public folders natively on your iOS, Android & Windows 8 devices."
+set :site_url_production,   ENV['site_url_production']
+set :site_url_development,  ENV['site_url_development']
+set :css_dir,               'css'
+set :js_dir,                'js'
+set :images_dir,            'img'
 
 set :sass, line_comments: false, style: :nested
 
 # Internationalization
 activate :i18n
-# Enable cache buster
-activate :asset_hash, :exts => ['.css', '.png', '.jpg', '.gif']
 # Use relative URLs
 activate :relative_assets
 # Pretty URLs
 activate :directory_indexes
+# Enable Bourbon
+activate :bourbon
+
+# Sitemap URLs (use trailing slashes)
+#public
+set :url_home,              "/"
 
 
 # ========================================================================
@@ -72,6 +77,32 @@ helpers do
     partial "_partials/#{partial_filename}"
   end
 
+  # Formats li item, and determines when to put class=active on li element (according to Bootstrap 3.1.1 spec)
+  def nav_li(label, url, css_class="", icon="")
+
+    # Determine if icon is specified
+    nav_icon = ""
+    unless icon.nil? or icon.empty?
+      nav_icon = " <i class='fa #{icon}'></i>"
+    end
+
+    # Normalize name string for use as HTML class
+    li_classes = ""
+    unless css_class.nil? or css_class.empty?
+      # Assign processed name to variable
+      li_classes = "#{css_class}"
+    else
+      label_formatted = label.downcase.tr(" ", "-")
+      li_classes = "nav-item-#{label_formatted}"
+    end
+
+    if current_page.url == url
+      li_classes += " active"
+    end
+
+    "<li class='#{li_classes}'><a href='#{url}'>#{label}#{nav_icon}</a></li>"
+  end
+
 end
 
 
@@ -89,9 +120,11 @@ configure :build do
   set :site_url, "#{site_url_production}"
   set :sass, style: :compressed
   activate :minify_css
-  #activate :minify_html
+  activate :minify_html
   activate :minify_javascript
   activate :gzip
+  # Enable cache buster
+  activate :asset_hash, :exts => ['.css', '.png', '.jpg', '.gif']
   # Create favicon and device-specific icons
   activate :favicon_maker, :icons => {
     "favicon_template.png" => [

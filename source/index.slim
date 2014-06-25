@@ -4,14 +4,17 @@ meta_description: This overrides the default meta description.
 ---
 
 markdown:
-    # Middleman Seed
+  # Middleman Template
 
-    This is a project template to be used for new [Middleman](http://middlemanapp.com) projects. It comes with Bootstrap, Slim, and Sass. Install the project template, then use it to initialize a new Middleman project.
+  This is a project template to be used for new [Middleman](http://middlemanapp.com) projects. It comes with Bootstrap, Slim, and Sass. Install the project template, then use it to initialize a new Middleman project.
 
-    ## Configuration
+  ## Configuration
 
-    * Set site_title, site_description, etc. in `config.rb`
-    * Replace `source/favicon_template.png` with appropriate graphic
+  * Copy `source/environment_variables_sample.rb` to `source/environment_variables.rb`
+  * Set `site_url_production` and `site_url_development` in `environment_variables.rb`
+  * Set site_title, site_description, etc. in `config.rb`
+  * Replace `source/favicon_template.png` with appropriate graphic
+  * Build away!
 
 .well
   markdown:
@@ -34,4 +37,8 @@ markdown:
 
     * Image optimization
     * CSS3 mixins
-    * HTML5 reset
+    * CSS reset
+    * HTML5 layout
+    * Image compression
+    * Asset minification
+    

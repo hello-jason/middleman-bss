@@ -2,19 +2,49 @@
 
 This is a project template to be used for new [Middleman](http://middlemanapp.com) projects. It comes with Bootstrap, Slim, and Sass. Install the project template, then use it to initialize a new Middleman project.
 
-## To install and start Middleman server
+## To install this Middleman template
 
-```bash
+```
 git clone git@github.com:hello-jason/seed-middleman-jason.git ~/.middleman/seed-middleman-jason
 middleman init project-name --template=seed-middleman-jason
-cd project-name
+```
+
+## To build a project based on this template
+
+**Requirements**
+
+* [Bundler](http://bundler.io/)
+* [rbenv](https://github.com/sstephenson/rbenv)
+* [ruby-build](https://github.com/sstephenson/ruby-build)
+
+* Clone project
+
+```bash
+git clone UPDATEME
+cd UPDATEME
+```
+
+* Install Ruby version
+
+```
+rbenv install
+```
+
+* Install dependencies
+
+```
 bundle install
+```
+
+* Start Middleman server
+
+```
 bundle exec middleman
 ```
 
 ## Configuration
 
-* Copy `environment_variables_sample.rb` to `environment_variables.rb`
+* Copy `source/environment_variables_sample.rb` to `source/environment_variables.rb`
 * Set `site_url_production` and `site_url_development` in `environment_variables.rb`
 * Set site_title, site_description, etc. in `config.rb`
 * Replace `source/favicon_template.png` with appropriate graphic
@@ -22,17 +52,10 @@ bundle exec middleman
 
 ## Deploying
 
-Build the project, then copy the contents of `build` to your web server.
+* Build the project, then copy the contents of `build` to your web server.
 
 ```bash
 bundle exec middleman build
-```
-
-## Updating this template
-
-```bash
-git fetch ~/.middleman/seed-middleman-jason
-git pull ~/.middleman/seed-middleman-jason
 ```
 
 ## Additional info
@@ -49,7 +72,6 @@ git pull ~/.middleman/seed-middleman-jason
 * [jQuery](http://jquery.com/)
 * [Modernizr](http://modernizr.com/)
 * [Favicon Maker](https://github.com/follmann/middleman-favicon-maker)
-* [Middleman Bourbon](http://bourbon.io/)
 
 **Included features:**
 
@@ -59,25 +81,3 @@ git pull ~/.middleman/seed-middleman-jason
 * HTML5 layout
 * Image compression
 * Asset minification
-
-## License
-
-Copyright (c) 2014 Jason Cross
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
-of the Software, and to permit persons to whom the Software is furnished to do
-so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.

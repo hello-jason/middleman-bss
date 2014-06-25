@@ -1,0 +1,4 @@
+# Copy this file to environment_variables.rb, then update these settings
+
+ENV['site_url_development'] = "http://change.this"
+ENV['site_url_production'] = "http://change.this"
