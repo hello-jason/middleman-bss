@@ -8,8 +8,8 @@ require "./source/environment_variables.rb"
 # ========================================================================
 # Site settings
 # ========================================================================
-set :site_title,            "pfsync"
-set :site_description,      "pfsync uses ActiveSync to support public folders natively on your iOS, Android & Windows 8 devices."
+set :site_title,            "Middleman Site"
+set :site_description,      "This is an example meta description."
 set :site_url_production,   ENV['site_url_production']
 set :site_url_development,  ENV['site_url_development']
 set :css_dir,               'css'
