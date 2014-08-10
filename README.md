@@ -73,10 +73,9 @@ cd project-dir
 rbenv install && rbenv rehash
 ```
 
-* Setup local ruby
+* Setup local ruby (this number should reflect the ruby version that was just installed)
 
 ```
-# This number should reflect the ruby version that was just installed
 rbenv local 2.1.1
 ```
 
