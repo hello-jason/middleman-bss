@@ -26,7 +26,7 @@ A [Middleman](http://middlemanapp.com) starter theme with Twitter Bootstrap, Sli
 
 ## Install this template
 
-Clone **middleman-bss** into `~/.middleman`. You will need to create this directory if it doesn't exist.
+* Clone **middleman-bss** into `~/.middleman`. You will need to create this directory if it doesn't exist.
 
 ```
 git clone git@github.com:hello-jason/middleman-bss.git ~/.middleman/middleman-bss
@@ -48,7 +48,7 @@ git remote set-url something-else.git
 
 ---
 
-Delete everything above after initializing a project, and keep the content below as decent starting documentation for your project.
+Dele*te everything above after initializing a project, and keep the content below as decent starting documentation for your project.*
 
 ---
 
