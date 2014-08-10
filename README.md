@@ -48,7 +48,7 @@ git remote set-url something-else.git
 
 ---
 
-Dele*te everything above after initializing a project, and keep the content below as decent starting documentation for your project.*
+*Delete everything above after initializing a project, and keep the content below as decent starting documentation for your project.*
 
 ---
 
