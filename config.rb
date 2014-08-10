@@ -1,8 +1,10 @@
 # ========================================================================
-# Copyright 2011-2014 Immense Networks, LLC
-# http://immense.net
+# Hello Jason
+# http://hellojason.net
 # ========================================================================
 
+# Copy ./source/environment_variables.example to ./source/environment_variables.rb
+# then update settings there.
 require "./source/environment_variables.rb"
 
 # ========================================================================
@@ -27,8 +29,8 @@ activate :directory_indexes
 # Enable Bourbon
 activate :bourbon
 
-# Sitemap URLs (use trailing slashes)
-#public
+# Sitemap URLs (use trailing slashes). Create additional variables here
+# for referenceing your pages.
 set :url_home,              "/"
 
 
@@ -50,8 +52,9 @@ set :url_home,              "/"
 # end
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
-# proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
-#  :which_fake_page => "Rendering a fake page with a local variable" }
+# proxy "/this-page-has-no-template.html", "/template-file.html",
+# :locals => {:which_fake_page => "Rendering a fake page with a local
+# variable" }
 
 # ========================================================================
 # Helpers
@@ -77,7 +80,8 @@ helpers do
     partial "_partials/#{partial_filename}"
   end
 
-  # Formats li item, and determines when to put class=active on li element (according to Bootstrap 3.1.1 spec)
+  # Formats li item, and determines when to put class=active on li element
+  # (according to Bootstrap 3.1.1 spec)
   def nav_li(label, url, css_class="", icon="")
 
     # Determine if icon is specified
