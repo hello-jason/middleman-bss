@@ -1,4 +1,6 @@
 # Copy this file to environment_variables.rb, then update these settings
 
-ENV['site_url_development'] = "http://change.this"
+# URL when developing locally
+ENV['site_url_development'] = "http://localhost:4567"
+# URL when building for deployment
 ENV['site_url_production'] = "http://change.this"
