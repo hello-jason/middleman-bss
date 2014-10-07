@@ -29,7 +29,7 @@ A [Middleman](http://middlemanapp.com) starter theme with Twitter Bootstrap, Sli
 * Clone **middleman-bss** into `~/.middleman`. You will need to create this directory if it doesn't exist.
 
 ```
-git clone git@github.com:hello-jason/middleman-bss.git ~/.middleman/middleman-bss
+git clone https://github.com/hello-jason/middleman-bss.git ~/.middleman/middleman-bss
 ```
 
 ## Using this template
@@ -38,12 +38,6 @@ git clone git@github.com:hello-jason/middleman-bss.git ~/.middleman/middleman-bs
 
 ```
 middleman init project-name --template=middleman-bss
-```
-
-* Change git path
-
-```
-git remote set-url something-else.git
 ```
 
 ---
@@ -109,7 +103,7 @@ bundle exec middleman build
 * [Middleman](http://middlemanapp.com/)
 * [HTML5 Boilerplate](http://html5boilerplate.com/)
 * [Slim](http://slim-lang.com/)
-* [Sass](http://sass-lang.com/)
+* [SCSS](http://sass-lang.com/)
 * [Bootstrap 3 Sass](https://github.com/twbs/bootstrap-sass)
 * [Font Awesome](http://fontawesome.io)
 * [Tilt](https://github.com/rtomayko/tilt)
