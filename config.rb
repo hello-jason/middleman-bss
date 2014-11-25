@@ -26,8 +26,13 @@ activate :i18n
 activate :relative_assets
 # Pretty URLs
 activate :directory_indexes
-# Enable Bourbon
-activate :bourbon
+
+# Enable Autoprefixer
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', 'Explorer >= 9']
+  config.cascade  = false
+  config.inline   = false
+end
 
 # Sitemap URLs (use trailing slashes). Create additional variables here
 # for referenceing your pages.
