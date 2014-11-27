@@ -2,27 +2,6 @@
 
 A [Middleman](http://middlemanapp.com) starter theme with Twitter Bootstrap, Slim templates, and SCSS.
 
-**Included packages:**
-
-* [Middleman](http://middlemanapp.com/)
-* [HTML5 Boilerplate](http://html5boilerplate.com/)
-* [Slim](http://slim-lang.com/)
-* [Sass](http://sass-lang.com/)
-* [Bootstrap 3 Sass](https://github.com/twbs/bootstrap-sass)
-* [Font Awesome](http://fontawesome.io)
-* [Tilt](https://github.com/rtomayko/tilt)
-* [jQuery](http://jquery.com/)
-* [Favicon Maker](https://github.com/follmann/middleman-favicon-maker)
-
-**Included features:**
-
-* Image optimization
-* Autoprefixer
-* CSS reset
-* HTML5 layout
-* Image compression
-* Asset minification
-
 ## Install this template
 
 * Clone **middleman-bss** into `~/.middleman`. You will need to create this directory if it doesn't exist.
@@ -44,6 +23,27 @@ middleman init project-name --template=middleman-bss
 *Delete everything above after initializing a project, and keep the content below as decent starting documentation for your project.*
 
 ---
+
+**Included packages:**
+
+* [Middleman](http://middlemanapp.com/)
+* [HTML5 Boilerplate](http://html5boilerplate.com/)
+* [Slim](http://slim-lang.com/)
+* [Sass](http://sass-lang.com/)
+* [Bootstrap 3 Sass](https://github.com/twbs/bootstrap-sass)
+* [Font Awesome](http://fontawesome.io)
+* [Tilt](https://github.com/rtomayko/tilt)
+* [jQuery](http://jquery.com/)
+* [Favicon Maker](https://github.com/follmann/middleman-favicon-maker)
+
+**Included features:**
+
+* Autoprefixer
+* CSS reset
+* HTML5 layout
+* Image compression
+* Asset minification
+* Favicon generation
 
 # Middleman Website
 
@@ -94,27 +94,3 @@ bundle exec middleman
 ```bash
 bundle exec middleman build
 ```
-
-## Additional info
-
-**Included packages:**
-
-* [Middleman](http://middlemanapp.com/)
-* [HTML5 Boilerplate](http://html5boilerplate.com/)
-* [Slim](http://slim-lang.com/)
-* [SCSS](http://sass-lang.com/)
-* [Bootstrap 3 Sass](https://github.com/twbs/bootstrap-sass)
-* [Font Awesome](http://fontawesome.io)
-* [Tilt](https://github.com/rtomayko/tilt)
-* [jQuery](http://jquery.com/)
-* [Modernizr](http://modernizr.com/)
-* [Favicon Maker](https://github.com/follmann/middleman-favicon-maker)
-
-**Included features:**
-
-* Image optimization
-* CSS3 mixins
-* CSS reset
-* HTML5 layout
-* Image compression
-* Asset minification
