@@ -9,11 +9,13 @@ html.no-js
     meta content="width=device-width" name="viewport"
     meta content="index,follow" name="robots"
 
+    // Check frontmatter title; fallback to value in config.rb
     - if current_page.data.title
-      title "#{site_title} | #{current_page.data.title}"
+      title #{site_title} | #{current_page.data.title}
     - else
-      title "#{site_title}"
+      title #{site_title}
 
+    // Check frontmatter meta description; fallback to value in config.rb
     - if current_page.data.meta_description
       meta content="#{current_page.data.meta_description}" name="description"
     - else
@@ -26,7 +28,7 @@ html.no-js
   body class="#{page_classes}"
     /[if lte IE 8]
       p.chromeframe.alert.alert-warning
-        | You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site better.
+        | You are using an outdated browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
     #wrap
       header role="banner"
         == _partial "navigation"
@@ -36,4 +38,4 @@ html.no-js
       footer.content-info role="content-info"
         .container
           p &copy; #{Time.now.year} #{site_title}
-    == javascript_include_tag "vendor/jquery-2.1.0.min.js", "bootstrap.js", "main.js"
+    == javascript_include_tag "vendor/jquery-2.1.1.min.js", "bootstrap.js", "main.js"

@@ -37,6 +37,8 @@ GEM
     favicon_maker (1.3)
       docile (~> 1.1)
     ffi (1.9.6)
+    font-awesome-middleman (4.2.3)
+      middleman-core (~> 3.0)
     fspath (2.0.6)
     haml (4.0.5)
       tilt
@@ -148,6 +150,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass (~> 3.3.1.0)
+  font-awesome-middleman (~> 4.2.3)
   middleman (= 3.3.7)
   middleman-autoprefixer (~> 2.3.0)
   middleman-favicon-maker (~> 3.7)

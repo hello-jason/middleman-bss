@@ -72,6 +72,9 @@ rbenv install && rbenv rehash
 rbenv local 2.1.5
 ```
 
+* Install JavaScript runtime
+You need a JS runtime. For [Nodejs](http://nodejs.org/), I suggest installing via [nvm](https://github.com/creationix/nvm). For [therubyracer](https://github.com/cowboyd/therubyracer), add `gem "therubyracer": "x.x.x"` to your Gemfile, then run `bundle install`
+
 * Install dependencies
 
 ```

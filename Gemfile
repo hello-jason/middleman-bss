@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 gem "middleman", "3.3.7"
 gem "slim", "~> 2.1.0"
 gem "bootstrap-sass", "~> 3.3.1.0", require: false
-# gem "font-awesome-middleman", "~> 4.2.2"
+gem "font-awesome-middleman", "~> 4.2.3"
 gem "middleman-favicon-maker", "~> 3.7"
 gem "middleman-autoprefixer", "~> 2.3.0"
 
