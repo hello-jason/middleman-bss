@@ -12,13 +12,12 @@ A [Middleman](http://middlemanapp.com) starter theme with Twitter Bootstrap, Sli
 * [Font Awesome](http://fontawesome.io)
 * [Tilt](https://github.com/rtomayko/tilt)
 * [jQuery](http://jquery.com/)
-* [Modernizr](http://modernizr.com/)
 * [Favicon Maker](https://github.com/follmann/middleman-favicon-maker)
 
 **Included features:**
 
 * Image optimization
-* CSS3 mixins
+* Autoprefixer
 * CSS reset
 * HTML5 layout
 * Image compression
@@ -70,7 +69,7 @@ rbenv install && rbenv rehash
 * Setup local ruby (this number should reflect the ruby version that was just installed)
 
 ```
-rbenv local 2.1.1
+rbenv local 2.1.5
 ```
 
 * Install dependencies
