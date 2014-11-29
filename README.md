@@ -81,7 +81,7 @@ You need a JS runtime. For [Nodejs](http://nodejs.org/), I suggest installing vi
 gem install bundler && bundle install
 ```
 
-* Copy `source/environment_variables.sample.rb` to `source/environment_variables.rb`
+* Copy `source/environment_variables.rb.sample` to `source/environment_variables.rb`
 * Set `site_url_production` and `site_url_development` in `source/environment_variables.rb`
 
 * Start Middleman server

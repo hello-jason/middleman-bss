@@ -17,27 +17,30 @@ set :site_url_development,  ENV['site_url_development']
 set :css_dir,               'css'
 set :js_dir,                'js'
 set :images_dir,            'img'
-
 set :sass, line_comments: false, style: :nested
+
+# Sitemap URLs (use trailing slashes)
+set :url_sample,            "/sample/"
+# Place additional URLs here...
 
 # Internationalization
 activate :i18n
+
 # Use relative URLs
 activate :relative_assets
+
 # Pretty URLs
 activate :directory_indexes
 
-# Enable Autoprefixer
+# Sprockets
+activate :sprockets
+
+# Autoprefixer
 activate :autoprefixer do |config|
   config.browsers = ['last 2 versions', 'Explorer >= 9']
   config.cascade  = false
   config.inline   = false
 end
-
-# Sitemap URLs (use trailing slashes). Create additional variables here
-# for referenceing your pages.
-set :url_home,              "/"
-
 
 # ========================================================================
 # Page options, layouts, aliases and proxies
@@ -86,7 +89,7 @@ helpers do
   end
 
   # Formats li item, and determines when to put class=active on li element
-  # (according to Bootstrap 3.1.1 spec)
+  # (according to Bootstrap >3.1.1 spec)
   def nav_li(label, url, css_class="", icon="")
 
     # Determine if icon is specified

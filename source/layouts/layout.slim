@@ -24,7 +24,7 @@ html.no-js
     link href="#{site_url+current_page.url}" rel="canonical"
 
     == stylesheet_link_tag "normalize", "main"
-    == javascript_include_tag "vendor/modernizr-2.6.1.min.js"
+    / == javascript_include_tag "vendor/modernizr-2.6.1.min.js"
   body class="#{page_classes}"
     /[if lte IE 8]
       p.chromeframe.alert.alert-warning
@@ -38,4 +38,4 @@ html.no-js
       footer.content-info role="content-info"
         .container
           p &copy; #{Time.now.year} #{site_title}
-    == javascript_include_tag "vendor/jquery-2.1.1.min.js", "bootstrap.js", "main.js"
+    == javascript_include_tag "base.js", "bootstrap-sprockets.js", "main.js"
