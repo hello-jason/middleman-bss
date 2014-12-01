@@ -27,13 +27,13 @@ middleman init project-name --template=middleman-bss
 **Included packages:**
 
 * [Middleman](http://middlemanapp.com/)
-* [HTML5 Boilerplate](http://html5boilerplate.com/)
 * [Slim](http://slim-lang.com/)
 * [Sass](http://sass-lang.com/)
 * [Bootstrap 3 Sass](https://github.com/twbs/bootstrap-sass)
 * [Font Awesome](http://fontawesome.io)
 * [Tilt](https://github.com/rtomayko/tilt)
 * [jQuery](http://jquery.com/)
+* [Livereload](https://github.com/middleman/middleman-livereload)
 * [Favicon Maker](https://github.com/follmann/middleman-favicon-maker)
 
 **Included features:**
@@ -81,7 +81,7 @@ You need a JS runtime. For [Nodejs](http://nodejs.org/), I suggest installing vi
 gem install bundler && bundle install
 ```
 
-* Copy `source/environment_variables.sample.rb` to `source/environment_variables.rb`
+* Copy `source/environment_variables.rb.sample` to `source/environment_variables.rb`
 * Set `site_url_production` and `site_url_development` in `source/environment_variables.rb`
 
 * Start Middleman server

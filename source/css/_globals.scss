@@ -1,0 +1,35 @@
+.visible {
+  display: block !important;
+  opacity: 1;
+  height: auto;
+}
+
+.cloak {
+  display: none !important;
+  opacity: 0;
+  height: 0;
+}
+
+::selection {
+  color: white;
+  background: green;
+}
+
+::-moz-selection {
+  color: white;
+  background: green;
+}
+
+.alignleft, .alignright {
+  margin-bottom: 1em;
+}
+
+.alignleft {
+  margin-right: 1em;
+  float: left;
+}
+
+.alignright {
+  margin-left: 1em;
+  float: right;
+}
