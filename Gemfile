@@ -17,4 +17,5 @@ gem "middleman-jquery", "~> 2.1.1"
 gem "middleman-minify-html", "~> 3.4.0"
 gem "middleman-imageoptim", "~> 0.1.4"
 
+gem "middleman-livereload", "~> 3.3.4"
 gem "oj", "~> 2.11.1"

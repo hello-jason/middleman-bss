@@ -32,9 +32,6 @@ activate :relative_assets
 # Pretty URLs
 activate :directory_indexes
 
-# Sprockets
-activate :sprockets
-
 # Autoprefixer
 activate :autoprefixer do |config|
   config.browsers = ['last 2 versions', 'Explorer >= 9']
@@ -72,7 +69,7 @@ end
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-#activate :livereload
+activate :livereload
 
 # Methods defined in the helpers block are available in templates
 # helpers do
