@@ -9,7 +9,7 @@ gem "font-awesome-middleman", "~> 4.2.3"
 gem "middleman-favicon-maker", "~> 3.7"
 
 # Templating
-gem "slim", "~> 2.1.0"
+gem "slim", "~> 3.0.0"
 gem "middleman-autoprefixer", "~> 2.3.0"
 
 # Optimization & minification
