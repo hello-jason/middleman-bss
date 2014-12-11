@@ -1,3 +1,5 @@
+[![Dependency Status](https://gemnasium.com/hello-jason/middleman-bss.svg)](https://gemnasium.com/hello-jason/middleman-bss)
+
 # Middleman (Bootstrap+Slim+SCSS)
 
 A [Middleman](http://middlemanapp.com) starter theme with Twitter Bootstrap, Slim templates, and SCSS.
