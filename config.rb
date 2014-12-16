@@ -17,6 +17,7 @@ set :site_url_development,  ENV['site_url_development']
 set :css_dir,               'css'
 set :js_dir,                'js'
 set :images_dir,            'img'
+set :fonts_dir,             'fonts'
 set :sass, line_comments: false, style: :nested
 
 # Sitemap URLs (use trailing slashes)

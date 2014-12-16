@@ -113,7 +113,7 @@ GEM
       sprockets (~> 2.12.1)
       sprockets-helpers (~> 1.1.0)
       sprockets-sass (~> 1.2.0)
-    minitest (5.4.3)
+    minitest (5.5.0)
     multi_json (1.10.1)
     oj (2.11.1)
     padrino-helpers (0.12.4)
