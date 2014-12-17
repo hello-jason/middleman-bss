@@ -24,6 +24,9 @@ set :sass, line_comments: false, style: :nested
 set :url_sample,            "/sample/"
 # Place additional URLs here...
 
+# Slim template engine
+require "slim"
+
 # Internationalization
 activate :i18n
 
@@ -129,12 +132,20 @@ end
 configure :build do
   set :site_url, "#{site_url_production}"
   set :sass, style: :compressed
+  
   activate :minify_css
   activate :minify_html
   activate :minify_javascript
   activate :gzip
+  
   # Enable cache buster
   activate :asset_hash, :exts => ['.css', '.png', '.jpg', '.gif']
+
+  # Ignore files/dir during build process
+  ignore "environment_variables.rb"
+  ignore "environment_variables.rb.sample"
+  ignore "favicon_template.png"
+  
   # Create favicon and device-specific icons
   activate :favicon_maker, :icons => {
     "favicon_template.png" => [
