@@ -1,15 +1,13 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+humanstxt.org/
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+  Developer -- @middleman-bss
 
-# THANKS
+# TECHNOLOGY
 
-    <name>
+  Middleman, Slim, SCSS
+  Bootstrap, Font Awesome, jQuery, Livereload, Autoprefixer
+  rbenv, ruby-build, nodejs, bundler
 
-# TECHNOLOGY COLOPHON
-
-    HTML5, CSS3
-    jQuery, Modernizr
+  Source: https://github.com/hello-jason/middleman-bss

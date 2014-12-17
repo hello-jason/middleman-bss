@@ -35,7 +35,6 @@ middleman init project-name --template=middleman-bss
 * [Font Awesome](http://fontawesome.io)
 * [Tilt](https://github.com/rtomayko/tilt)
 * [jQuery](http://jquery.com/)
-* [Livereload](https://github.com/middleman/middleman-livereload)
 * [Favicon Maker](https://github.com/follmann/middleman-favicon-maker)
 
 **Included features:**
@@ -46,6 +45,7 @@ middleman init project-name --template=middleman-bss
 * Image compression
 * Asset minification
 * Favicon generation
+* Live Reload
 
 # Middleman Website
 
