@@ -8,23 +8,20 @@ html.no-js
     meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
     meta content="width=device-width" name="viewport"
     meta content="index,follow" name="robots"
-
     // Check frontmatter title; fallback to value in config.rb
     - if current_page.data.title
       title #{site_title} | #{current_page.data.title}
     - else
       title #{site_title}
-
     // Check frontmatter meta description; fallback to value in config.rb
     - if current_page.data.meta_description
       meta content="#{current_page.data.meta_description}" name="description"
     - else
       meta content="#{site_description}" name="description"
-
+    // Canonical URL
     link href="#{site_url+current_page.url}" rel="canonical"
-
     == stylesheet_link_tag "main"
-    / == javascript_include_tag "vendor/modernizr-2.6.1.min.js"
+
   body class="#{page_classes}"
     /[if lte IE 8]
       p.chromeframe.alert.alert-warning
@@ -36,6 +33,7 @@ html.no-js
         .container
           == yield
       footer.content-info role="content-info"
+        hr
         .container
           p &copy; #{Time.now.year} #{site_title}
     == javascript_include_tag "base.js", "bootstrap-includes.js", "main.js"

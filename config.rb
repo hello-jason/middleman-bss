@@ -24,6 +24,10 @@ set :sass, line_comments: false, style: :nested
 set :url_sample,            "/sample/"
 # Place additional URLs here...
 
+# Sitemap XML
+require "builder"
+page "/sitemap.xml", :layout => false
+
 # Slim template engine
 require "slim"
 
@@ -145,6 +149,7 @@ configure :build do
   ignore "environment_variables.rb"
   ignore "environment_variables.rb.sample"
   ignore "favicon_template.png"
+  ignore "sitemap.yml"
   
   # Create favicon and device-specific icons
   activate :favicon_maker, :icons => {
