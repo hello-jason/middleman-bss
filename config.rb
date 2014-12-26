@@ -18,7 +18,6 @@ set :css_dir,               'css'
 set :js_dir,                'js'
 set :images_dir,            'img'
 set :fonts_dir,             'fonts'
-set :sass, line_comments: false, style: :nested
 
 # Sitemap URLs (use trailing slashes)
 set :url_sample,            "/sample/"
@@ -135,7 +134,7 @@ end
 # ========================================================================
 configure :build do
   set :site_url, "#{site_url_production}"
-  set :sass, style: :compressed
+  set :sass, line_comments: false, style: :nested
   
   activate :minify_css
   activate :minify_html
