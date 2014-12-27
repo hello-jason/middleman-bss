@@ -127,6 +127,7 @@ end
 # ========================================================================
 configure :development do
   set :site_url, "#{site_url_development}"
+  set :sass, :sourcemap => :inline
 end
 
 # ========================================================================
