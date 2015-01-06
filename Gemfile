@@ -15,7 +15,7 @@ gem "middleman-autoprefixer", "~> 2.3.0"
 # Optimization & minification
 gem "middleman-jquery", "~> 2.1.1"
 gem "middleman-minify-html", "~> 3.4.0"
-gem "middleman-imageoptim", "~> 0.1.4"
+gem "middleman-imageoptim", "~> 0.2.0"
 gem "builder", "~> 3.2.2"
 gem "middleman-sitemap", "~> 0.0.13"
 
