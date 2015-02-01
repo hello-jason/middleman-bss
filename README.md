@@ -20,8 +20,7 @@ git clone https://github.com/hello-jason/middleman-bss.git ~/.middleman/middlema
 middleman init project-name --template=middleman-bss
 ```
 
-* Get your own git
-This is your project, so you'll want to remove the included `.git` directory after initializing a new project.
+* This is your project, so you'll want to remove the included `.git` directory after initializing a new project.
 ```
 rm -rf .git
 ```
