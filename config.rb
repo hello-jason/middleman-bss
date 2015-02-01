@@ -185,3 +185,20 @@ configure :build do
     ]
   }
 end
+
+# ========================================================================
+# Deployment-specific configuration
+# ========================================================================
+# Middleman-deploy can deploy a site via rsync, ftp, sftp, or git.
+# Documentation: https://github.com/karlfreeman/middleman-deploy
+# ========================================================================
+activate :deploy do |deploy|
+  deploy.build_before = true
+  deploy.method       = :rsync
+  deploy.host         = 'server'
+  deploy.user         = 'username'
+  deploy.path         = 'path/to/docroot'
+  # Optional Settings
+  # deploy.port       = 5309 # ssh port, default: 22
+  # deploy.clean      = true # remove orphaned files on remote host, default:  false
+end
