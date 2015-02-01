@@ -20,17 +20,21 @@ git clone https://github.com/hello-jason/middleman-bss.git ~/.middleman/middlema
 middleman init project-name --template=middleman-bss
 ```
 
-* Change your `git remote`
-Your project will initialize with this 
+* Get your own git
+This is your project, so you'll want to remove the included `.git` directory after initializing a new project.
 ```
-git 
+rm -rf .git
 ```
 
 ---
 
-*Delete everything above after initializing a project, and keep the content below as decent starting documentation for your project.*
+*That's it! Initialize your own git repo now, if you like. Delete everything above after initializing a project, and keep the content below as decent starting documentation for your project.*
 
 ---
+
+# Middleman Website
+
+Written with [Ruby](https://www.ruby-lang.org/en/)+[Middleman](http://middlemanapp.com)
 
 **Included packages:**
 
@@ -52,10 +56,6 @@ git
 * Asset minification
 * Favicon generation
 * Live Reload
-
-# Middleman Website
-
-Written with [Ruby](https://www.ruby-lang.org/en/)+[Middleman](http://middlemanapp.com)
 
 ## Setup in development
 
