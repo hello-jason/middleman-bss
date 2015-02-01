@@ -19,5 +19,9 @@ gem "middleman-imageoptim", "~> 0.2.0"
 gem "builder", "~> 3.2.2"
 gem "middleman-sitemap", "~> 0.0.13"
 
+# Development
 gem "middleman-livereload", "~> 3.4.2"
 gem "oj", "~> 2.11.4"
+
+# Deployment
+gem "middleman-deploy", "~> 1.0.0"

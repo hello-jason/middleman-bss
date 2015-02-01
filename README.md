@@ -98,10 +98,16 @@ gem install bundler && bundle install
 bundle exec middleman
 ```
 
-## Deploying
+## Building
 
-* Build the project, then copy the contents of `build` to your web server.
+* Run the following to build your website locally into a `build` folder
 
 ```bash
 bundle exec middleman build
+```
+
+## Deploying
+Middleman-deploy can deploy a site via rsync, ftp, sftp, or git. Configure the deployment section of `config.rb`, then run the deploy command. Note, this will build for you before deploying.
+```bash
+bundle exec middleman deploy
 ```
