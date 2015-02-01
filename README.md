@@ -20,6 +20,12 @@ git clone https://github.com/hello-jason/middleman-bss.git ~/.middleman/middlema
 middleman init project-name --template=middleman-bss
 ```
 
+* Change your `git remote`
+Your project will initialize with this 
+```
+git 
+```
+
 ---
 
 *Delete everything above after initializing a project, and keep the content below as decent starting documentation for your project.*

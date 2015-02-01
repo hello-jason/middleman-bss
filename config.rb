@@ -149,6 +149,7 @@ configure :build do
   ignore "environment_variables.rb.sample"
   ignore "favicon_template.png"
   ignore "sitemap.yml"
+  ignore "imageoptim.manifest.yml"
 
   # Compress and optimise images during build
   # Documentation: https://github.com/plasticine/middleman-imageoptim
