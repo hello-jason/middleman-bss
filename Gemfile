@@ -1,3 +1,4 @@
+# Source
 source "https://rubygems.org"
 
 # Core
@@ -9,7 +10,7 @@ gem "font-awesome-middleman", "~> 4.2.3"
 gem "middleman-favicon-maker", "~> 3.7"
 
 # Templating
-gem "slim", "~> 3.0.1"
+gem "slim", "~> 3.0.2"
 gem "middleman-autoprefixer", "~> 2.4.2"
 
 # Optimization & minification
