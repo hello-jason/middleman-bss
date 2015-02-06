@@ -11,7 +11,7 @@ gem "middleman-favicon-maker", "~> 3.7"
 
 # Templating
 gem "slim", "~> 3.0.2"
-gem "middleman-autoprefixer", "~> 2.4.2"
+gem "middleman-autoprefixer", "~> 2.4.3"
 
 # Optimization & minification
 gem "middleman-jquery", "~> 2.1.1"
