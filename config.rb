@@ -116,7 +116,7 @@ helpers do
       li_classes += " active"
     end
 
-    "<li class='#{li_classes}'><a href='#{url}'>#{label}#{nav_icon}</a></li>"
+    "<li class='#{li_classes}'><a href='#{site_url}#{url}'>#{label}#{nav_icon}</a></li>"
   end
 
 end
