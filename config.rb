@@ -14,10 +14,10 @@ set :site_title,            "Middleman Site"
 set :site_description,      "This is an example meta description."
 set :site_url_production,   ENV['site_url_production']
 set :site_url_development,  ENV['site_url_development']
-set :css_dir,               'css'
-set :js_dir,                'js'
-set :images_dir,            'img'
-set :fonts_dir,             'fonts'
+set :css_dir,               'assets/css'
+set :js_dir,                'assets/js'
+set :images_dir,            'assets/img'
+set :fonts_dir,             'assets/fonts'
 
 # Sitemap URLs (use trailing slashes)
 set :url_sample,            "/sample/"
@@ -31,7 +31,7 @@ page "/sitemap.xml", :layout => false
 require "slim"
 
 # Internationalization
-activate :i18n
+# activate :i18n
 
 # Use relative URLs
 activate :relative_assets
@@ -135,12 +135,12 @@ end
 configure :build do
   set :site_url, "#{site_url_production}"
   set :sass, line_comments: false, style: :nested
-  
+
   activate :minify_css
   activate :minify_html
   activate :minify_javascript
   activate :gzip
-  
+
   # Enable cache buster
   activate :asset_hash, :exts => ['.css', '.png', '.jpg', '.gif']
 
@@ -159,7 +159,7 @@ configure :build do
     # Cause image_optim to be in shouty-mode
     options.verbose = false
   end
-  
+
   # Create favicon and device-specific icons
   # Edit favicon_template.png for custom icon
   activate :favicon_maker, :icons => {

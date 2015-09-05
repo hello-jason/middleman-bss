@@ -2,11 +2,11 @@
 source "https://rubygems.org"
 
 # Core
-gem "middleman", "3.3.12"
+gem "middleman", "3.4.0"
 
 # Assets
 gem "bootstrap-sass", "~> 3.3.5.1", require: false
-gem "font-awesome-middleman", "~> 4.2.3"
+gem "font-awesome-middleman", "~> 4.3.0"
 gem "middleman-favicon-maker", "~> 3.7"
 
 # Templating
@@ -21,8 +21,8 @@ gem "builder", "~> 3.2.2"
 gem "middleman-sitemap", "~> 0.0.13"
 
 # Development
-gem "middleman-livereload", "~> 3.4.2"
-gem "oj", "~> 2.12.9"
+gem "middleman-livereload", "~> 3.4.3"
+gem "oj", "~> 2.12.13"
 
 # Deployment
 gem "middleman-deploy", "~> 1.0.0"
