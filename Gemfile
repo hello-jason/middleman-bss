@@ -2,11 +2,11 @@
 source "https://rubygems.org"
 
 # Core
-gem "middleman", "3.4.0"
+gem "middleman", "~> 3.4"
 
 # Assets
 gem "bootstrap-sass", "~> 3.3.5.1", require: false
-gem "font-awesome-middleman", github: 'hello-jason/font-awesome-middleman', branch: 'update-4-4-0'
+gem "font-awesome-middleman", "~> 4.4"
 gem "middleman-favicon-maker", "~> 3.7"
 
 # Templating
