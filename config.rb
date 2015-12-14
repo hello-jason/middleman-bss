@@ -2,10 +2,11 @@
 # Hello Jason
 # http://hellojason.net
 # ========================================================================
+$:.push File.expand_path('../source', __FILE__)
 
 # Copy ./source/environment_variables.example to ./source/environment_variables.rb
 # then update settings there.
-require "./source/environment_variables.rb"
+require 'environment_variables'
 
 # ========================================================================
 # Site settings
